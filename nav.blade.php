@@ -1,5 +1,5 @@
 		<header>
-			<!--<ul class="top-nav clearfix text-right">
+			<ul class="top-nav clearfix text-right">
 				<li class="dropdown submenu">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						 @if(Cookie::get('city')) {{Cookie::get('city')}} @else Select City @endif 
@@ -69,84 +69,7 @@
 					</a>
 					@endif
 				</li>
-			</ul>-->
-			<nav class="navbar navbar-inverse">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown submenu">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						 @if(Cookie::get('city')) {{Cookie::get('city')}} @else Select City @endif 
-					</a>
-					<ul class="dropdown-menu subitems">
-						<li>
-							<a href="#" class="loc-city">
-								All
-							</a>
-							<a href="#" class="loc-city" data-latitude="23.035232" data-longitude="72.586459">
-								Ahmedabad
-							</a>
-							<a href="#" class="loc-city" data-latitude="12.966889" data-longitude="77.587050">
-								Bengaluru
-							</a>
-							<a href="#" class="loc-city" data-latitude="30.730770" data-longitude="76.768425">
-								Chandigarh
-							</a>
-							<a href="#" class="loc-city" data-latitude="13.057636" data-longitude="80.203244">
-								Chennai
-							</a>
-							<a href="#" class="loc-city" data-latitude="28.638729" data-longitude="77.205149">
-								Delhi
-							</a>
-							<a href="#" class="loc-city" data-latitude="28.466680" data-longitude="77.022145">
-								Gurgaon
-							</a>
-							<a href="#" class="loc-city" data-latitude="17.401626" data-longitude="78.479007">
-								Hyderabad
-							</a>
-							<a href="#" class="loc-city" data-latitude="22.591308" data-longitude="88.356213">
-								Kolkatta
-							</a>
-							<a href="#" class="loc-city" data-latitude="19.091854" data-longitude="72.873638">
-								Mumbai
-							</a>
-							<a href="#" class="loc-city" data-latitude="28.532056" data-longitude="77.393091">
-								Noida
-							</a>
-							<a href="#" class="loc-city" data-latitude="18.504478" data-longitude="73.864753">
-								Pune
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="/about">
-						About
-					</a>
-				</li>
-				<li>
-					<a href="/maker/login">
-						Sell with IMI
-					</a>				
-				</li>
-				@if(!Auth::check())
-				<li>
-					<a href="#" data-toggle="modal" data-target="#login-modal">
-						Login
-					</a>
-				
-				@else
-				<li>
-					<a href="/my-account">
-						<span>My Account</span>
-					</a>
-				</li>
-				<li>
-					<a href="/logout">
-						<span>Signout</span>
-					</a>
-					@endif
-				</li>
 			</ul>
-			</nav>
 			<div class="nav-otr">
 				<div class="logo-otr">
 					<a href="/">
